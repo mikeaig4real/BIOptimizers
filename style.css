@@ -51,7 +51,7 @@ header {
     position: fixed;
     z-index: 109;
     top: 4vh;
-    right: 50vh;
+    right: 50vw;
 }
 
 .mobile {
