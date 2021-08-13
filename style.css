@@ -2,13 +2,17 @@
 
 :root {
     --primary-color: #fff;
-    --secondry-color: #1b1b1b; 
+    --secondry-color: #041a00; 
     transition: all .2s ease-in-out !important;
 }
 
 .dark-theme {
-    --primary-color: #1b1b1b;
+    --primary-color: #041a00;
     --secondry-color: #fff;
+}
+
+body{
+    background-color: var(--primary-color);
 }
 
 * {
@@ -29,11 +33,6 @@
     border-radius: 0 0 2vh 2vh;
     border-bottom: 2px solid green;
     transition: all .2s ease-in-out !important;
-    background: rgb(51,187,51);
-    background: -moz-linear-gradient(90deg, rgba(51,187,51,1) 0%, var(--primary-color) 86%);
-    background: -webkit-linear-gradient(90deg, rgba(51,187,51,1) 0%, var(--primary-color) 86%);
-    background: linear-gradient(90deg, rgba(51,187,51,1) 0%, var(--primary-color) 86%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#33bb33",endColorstr="#ffffff",GradientType=1);
 }
 
 header {
@@ -46,6 +45,13 @@ header {
     align-items: center;
     border-radius: 1rem 1rem 0 0;
     transition: inherit
+}
+
+.dark {
+    position: fixed;
+    z-index: 109;
+    top: 4vh;
+    right: 10vh;
 }
 
 .mobile {
@@ -101,11 +107,6 @@ header nav ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 36, 3, 0.72);
-    background: -moz-linear-gradient(90deg, rgba(0, 36, 3, 0.624) 49%, rgba(172,205,0,1) 49%, rgba(0,128,0,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(0,36,3,1) 49%, rgba(172,205,0,1) 49%, rgba(0,128,0,1) 100%);
-    background: linear-gradient(90deg, rgba(0, 36, 3, 0.679) 49%, rgba(172,205,0,1) 49%, rgba(0,128,0,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#002403",endColorstr="#008000",GradientType=1);
     margin: 0 1vw;
     font-size: 2vmax;
     font-weight: 800;
@@ -124,7 +125,8 @@ header nav ul li:hover {
 }
 
 .dark i {
-    color: var(--primary-color);
+    position: fixed;
+    color: var(--secondry-color);
     margin: 1vw;
     transform: scale(1.5);
     cursor: pointer;
@@ -147,12 +149,12 @@ header nav ul li:hover {
 
 .intro h1 {
     font-size: 5vmax;
-    color: #fff;
+    color: var(--primary-color);
 }
 
 .intro p {
     padding-left: 13vh;
-    color: #041a00;
+    color: var(--secondry-color);
     font-size: 1.5vmax;
     font-weight: 800;
 }
@@ -199,11 +201,6 @@ header nav ul li:hover {
 .container2 {
     border-radius: 0 0 1vh 1vh;
     border-bottom: 2px solid green;
-    background: rgb(255, 255, 255);
-    background: -moz-linear-gradient(90deg, var(--primary-color) 0.5%, rgba(51,187,51,1) 99%);
-    background: -webkit-linear-gradient(90deg, var(--primary-color) 0.5%, rgba(51,187,51,1) 99%);
-    background: linear-gradient(90deg, var(--primary-color) 0.5%, rgba(51,187,51,1) 99%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#33bb33",GradientType=1);
 }
 
 .sample {
@@ -247,20 +244,21 @@ header nav ul li:hover {
     box-shadow:1rem 1rem 3rem rgba(0, 0, 0, 0.919);
 }
 
-.note {
-    background-color:greenyellow;
-    padding: 0.5rem 1rem;
-    border-radius: 1vh 0 1vh 0;
-    border-bottom: 0.5px solid var(--primary-color);
-    margin: 2vh 0;
-}
-
 .sample p {
     margin: 1vh 0;
     font-style: italic;
     font-weight: bold;
     align-self: flex-start;
-    color: #041a00;
+    color:var(--secondry-color);
+}
+
+.note {
+    background-color:greenyellow;
+    padding: 0.5rem 1rem;
+    border-radius: 1vh 0 1vh 0;
+    border-bottom: 0.5px solid var(--secondry-color);
+    margin: 2vh 0;
+    color: #041a00 !important;
 }
 
 .container3 {
@@ -268,11 +266,6 @@ header nav ul li:hover {
     height: 80vh;
     border-radius: 0 0 2vh 2vh;
     border-bottom: 2px solid green;
-    background: #5E9432;
-    background: -moz-linear-gradient(90deg, #5E9432 0%,#5E9432 86%);
-    background: -webkit-linear-gradient(90deg, #5E9432 0%,#5E9432 86%);
-    background: linear-gradient(90deg, #5E9432 0%,#5E9432 86%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#33bb33",endColorstr="#ffffff",GradientType=1);
 }
 
 .courses {
@@ -285,7 +278,7 @@ header nav ul li:hover {
     background-position: right bottom;
     background-repeat: no-repeat;
     height: 100%;
-     border-radius: 0 0 2vh 2vh;
+    border-radius: 0 0 2vh 2vh;
     z-index: 100;
 }
 
@@ -438,7 +431,7 @@ footer {
     display: flex;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:400px) {
     header {
         height: auto;
     }
@@ -474,7 +467,7 @@ footer {
         max-height: 10vh;
         width: fit-content;
        justify-self: flex-end;
-       padding-left: 5vh;
+       padding-left: 6vh;
     }
 
     .intro h1 {
