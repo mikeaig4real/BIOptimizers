@@ -150,7 +150,7 @@ header nav ul li:hover {
 }
 
 .intro h1 , p {
-    z-index: 201;
+    z-index: 101;
 }
 
 .intro h1 {
@@ -258,6 +258,10 @@ header nav ul li:hover {
     color:var(--secondry-color);
 }
 
+.sample p a {
+    color: #697e02 !important;
+}
+
 .note {
     background-color:greenyellow;
     padding: 0.5rem 1rem;
@@ -298,13 +302,20 @@ header nav ul li:hover {
     height: 60vh;
 }
 
-iframe {
+.iframe {
     width: 30vw;
     height: 30vh;
     margin: 0.5rem 2rem;
     border: 3px solid rgb(0, 36, 0);
     border-radius: 2vh;
     box-shadow: 1rem 1rem 10rem var(--primary-color);
+}
+
+.iframe img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 3px solid rgb(0, 36, 0);
+    border-radius: 2vh;
 }
 
 .btn {
@@ -322,7 +333,7 @@ iframe {
     transition: all 0.2s ease-in-out;
     position: relative;
     overflow: hidden;
-    margin: 2rem 0;
+    margin: 3rem 0 0;
     height: 6vh;
 }
 
@@ -485,7 +496,7 @@ footer {
         min-width: max-content;
     }
     
-    iframe {
+    .iframe {
         margin: 0.5rem 0.5rem;
     }
 
