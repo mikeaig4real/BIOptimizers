@@ -438,7 +438,7 @@ footer {
     display: flex;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:600px) {
     header {
         height: auto;
     }
@@ -474,7 +474,7 @@ footer {
         max-height: 10vh;
         width: fit-content;
        justify-self: flex-end;
-       padding-left: 6vh;
+       padding-left: 5vh;
     }
 
     .intro h1 {
