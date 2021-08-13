@@ -21,6 +21,7 @@ body{
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
     transition: all .2s ease-in-out !important;
+    text-decoration: none;
 }
 
 .container1 {
