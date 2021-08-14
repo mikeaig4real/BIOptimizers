@@ -302,20 +302,32 @@ header nav ul li:hover {
     height: 60vh;
 }
 
-.iframe {
+.iframe{
     width: 30vw;
     height: 30vh;
     margin: 0.5rem 2rem;
     border: 3px solid rgb(0, 36, 0);
     border-radius: 2vh;
     box-shadow: 1rem 1rem 10rem var(--primary-color);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.iframe img {
-    max-width: 100%;
-    height: auto;
-    border-bottom: 3px solid rgb(0, 36, 0);
-    border-radius: 2vh;
+.one {
+    background-image:url("https://i.ytimg.com/vi_webp/MZO_LBoeiTo/maxresdefault.webp");
+}
+
+.two {
+    background-image:url("https://i.ytimg.com/vi/arMSFfpv7OA/maxresdefault.jpg");
+}
+
+.three {
+    background-image:url("https://i.ytimg.com/vi/1ptB-9NJboA/hqdefault.jpg");
+}
+
+.four {
+    background-image:url("https://i.ytimg.com/vi/WgEZVSpZMN0/hqdefault.jpg");
 }
 
 .btn {
@@ -442,6 +454,15 @@ footer {
     font-size: 1.1rem;
     border-bottom:2px solid rgb(0, 49, 0);
     border-radius: 0 0 1rem 1rem;
+}
+
+.footer {
+    font-size: 2vmax;
+}
+
+.footer p {
+    font-weight: 900;
+    color: #ABC352 ;
 }
 
 .show {
